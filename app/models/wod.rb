@@ -1,0 +1,2 @@
+class Wod < ApplicationRecord
+end
