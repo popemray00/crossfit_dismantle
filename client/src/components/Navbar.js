@@ -14,8 +14,8 @@ const NavBar = () => {
       <NavLink className="Link" to="/wod">Wod</NavLink>
       <NavLink className="Link" to="/momstrong">Mom Strong</NavLink>
       <div className="icons">
-      <a href="https://www.facebook.com/CrossFit-Dismantle-1524864784486908/"><FontAwesomeIcon icon={['fab', 'facebook']} size="5x" className="Facebook" /></a>
-      <a href="https://www.instagram.com/crossfitdismantle/"><FontAwesomeIcon icon={['fab', 'instagram']} size="5x" className="Instagram" /></a>
+      <a href="https://www.facebook.com/CrossFit-Dismantle-1524864784486908/" target="_blank"><FontAwesomeIcon icon={['fab', 'facebook']} size="5x" className="Facebook" /></a>
+      <a href="https://www.instagram.com/crossfitdismantle/" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} size="5x" className="Instagram" /></a>
       </div>
     </div>
     <div>
