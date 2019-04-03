@@ -1,12 +1,14 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button'
+import './Home.css'
+
+
 
 
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div className="Container">
         <Jumbotron>
           <h1>Crossfit Dismantle!</h1>
           <p>
