@@ -2,19 +2,26 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import Home from '../components/Home';
+import Wod from '../components/Wod';
+import MomStrong from '../components/MomStrong';
+import Schedule from '../components/Schedule';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee} from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faDumbbell, faQuoteLeft, faQuoteRight} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faCheckSquare, faCoffee)
+library.add(fab, faCheckSquare, faCoffee, faDumbbell, faQuoteLeft, faQuoteRight)
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="app">
-          <NavBar />
+
             <Route exact path="/" component={Home} />
+            <Route exact path="/schedule" component={Schedule} />
+            <Route exact path="/wod" component={Wod} />
+            <Route exact path="/momstrong" component={MomStrong} />
+            <NavBar />
         </div>
       </Router>
     );
