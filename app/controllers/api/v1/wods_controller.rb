@@ -1,15 +1,19 @@
+module Api::V1
 class WodsController < ApplicationController
   before_action :set_wod, only: [:show, :update, :destroy]
 
   # GET /wods
   # GET /wods.json
   def index
-    @wods = Wod.all
+    @wods = Wod.order("created_at DESC")
+
+    render json: @wods
   end
 
   # GET /wods/1
   # GET /wods/1.json
   def show
+    @wod
   end
 
   # POST /wods
@@ -18,7 +22,7 @@ class WodsController < ApplicationController
     @wod = Wod.new(wod_params)
 
     if @wod.save
-      render :show, status: :created, location: @wod
+      render json: @wod, status: :created
     else
       render json: @wod.errors, status: :unprocessable_entity
     end
@@ -28,7 +32,7 @@ class WodsController < ApplicationController
   # PATCH/PUT /wods/1.json
   def update
     if @wod.update(wod_params)
-      render :show, status: :ok, location: @wod
+      render json: @wod
     else
       render json: @wod.errors, status: :unprocessable_entity
     end
@@ -48,6 +52,7 @@ class WodsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wod_params
-      params.require(:wod).permit(:title, :date, :workout)
+      params.require(:wods).permit(:title, :date, :workout)
     end
+end
 end

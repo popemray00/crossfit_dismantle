@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import Home from '../components/Home';
-import Wod from '../components/Wod';
+import WodContainer from '../components/WodContainer';
 import MomStrong from '../components/MomStrong';
 import Schedule from '../components/Schedule';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,10 +16,9 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-
             <Route exact path="/" component={Home} />
             <Route exact path="/schedule" component={Schedule} />
-            <Route exact path="/wod" component={Wod} />
+            <Route exact path="/wod" component={WodContainer} />
             <Route exact path="/momstrong" component={MomStrong} />
             <NavBar />
         </div>

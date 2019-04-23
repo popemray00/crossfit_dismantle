@@ -1,0 +1,50 @@
+.Header {
+  margin-left: 203px;
+  color: black;
+  height: 100%;
+  background-color:  red;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.Header h1 {
+  font-size: 100px;
+}
+
+.WodImage {
+  width: 100%;
+  height: 100%;
+}
+
+.WodBox {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+.deleteButton {
+  color: black;
+}
+
+#Edit {
+  color: black;
+}
+
+.tile {
+  height: 350px;
+  width: 418px;
+  margin: 10px;
+  background: black;
+  float: left;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+
+.newWodButton {
+  background: red;
+  color: black;
+  border: none;
+  cursor: text;
+
+}

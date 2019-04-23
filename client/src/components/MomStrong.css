@@ -7,20 +7,20 @@
   font-size: 100px;
 }
 
+.Bottom-Image {
+  margin-left: 280px;
+
+}
+
 .Bottom-Image img {
   width: 100%;
   height: 100%;
-  margin-left: 280px;
-
 }
 
 div.gallery {
   margin: 5px;
   float: left;
   width: 380px;
-}
-
-div.gallery:hover {
 }
 
 div.gallery img {

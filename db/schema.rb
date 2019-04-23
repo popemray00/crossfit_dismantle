@@ -10,12 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_02_051310) do
+ActiveRecord::Schema.define(version: 2019_04_17_183000) do
 
   create_table "wods", force: :cascade do |t|
     t.string "title"
     t.date "date"
     t.string "workout"
+    t.string "workout1"
+    t.string "workout2"
+    t.string "workout3"
+    t.string "workout4"
+    t.string "workout5"
+    t.string "workout6"
+    t.string "workout7"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
