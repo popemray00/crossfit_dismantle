@@ -9,10 +9,10 @@ const NavBar = () => {
     <div>
       <div className="Navbar">
         <img src="Logo.png" className="Navlogo" alt="Crossfit Dismantle" />
-        <NavLink className="Link" to="/">Home</NavLink>
-        <NavLink className="Link" to="/schedule">Schedule</NavLink>
-        <NavLink className="Link" to="/wod">WOD</NavLink>
-        <NavLink className="Link" to="/momstrong">Mom Strong</NavLink>
+        <NavLink className="Link" id="Link1" to="/">Home</NavLink>
+        <NavLink className="Link" id="Link2" to="/schedule">Schedule</NavLink>
+        <NavLink className="Link" id="Link3" to="/wod">WOD</NavLink>
+        <NavLink className="Link" id="Link4" to="/momstrong">Mom Strong</NavLink>
 
         <div className="icons">
           <h4>Follow Us!</h4><br/>
