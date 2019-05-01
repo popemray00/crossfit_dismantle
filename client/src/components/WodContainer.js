@@ -63,7 +63,7 @@
       }
 
       deleteWod = (id) => {
-        axios.delete(`'/api/v1/wods/${id}'`)
+        axios.delete(`/api/v1/wods/${id}`)
           .then(response => {
             const wodIndex = this.state.wods.findIndex(x => x.id === id)
             const wods = update(this.state.wods, {
