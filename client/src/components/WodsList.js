@@ -18,7 +18,7 @@ class WodForm extends Component {
   handleBlur = () => {
     const wod = {title: this.state.title, date: this.state.date, workout: this.state.workout, workout1: this.state.workout1, workout2: this.state.workout2, workout3: this.state.workout3, workout4: this.state.workout4, workout5: this.state.workout5, workout6: this.state.workout6, workout7: this.state.workout7 }
       axios.put(
-        `http://localhost:3000/api/v1/wods/${this.props.wod.id}`,
+        `http://localhost:5000/api/v1/wods/${this.props.wod.id}`,
         {wods: wod}
       )
       .then(response => {

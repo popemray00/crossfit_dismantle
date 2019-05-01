@@ -15,18 +15,18 @@
       }
 
       componentDidMount() {
-        axios.get('http://localhost:3000/api/v1/wods.json')
+        axios.get('/api/v1/wods.json')
           .then(response => {
             console.log(response)
             this.setState({
               wods: response.data
             })
           })
-          .catch(error => console.log(error))
+          .catch(error => console.log(error.response))
       }
 
       addNewWod = () => {
-        axios.post('http://localhost:3000/api/v1/wods.json', {
+        axios.post('/api/v1/wods.json', {
             wods: {
               title: 'WOD',
               date: Date(),
@@ -63,7 +63,7 @@
       }
 
       deleteWod = (id) => {
-        axios.delete(`http://localhost:3001/api/v1/wods/${id}`)
+        axios.delete(`'/api/v1/wods/${id}'`)
           .then(response => {
             const wodIndex = this.state.wods.findIndex(x => x.id === id)
             const wods = update(this.state.wods, {
