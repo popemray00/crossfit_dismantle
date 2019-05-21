@@ -1,0 +1,29 @@
+.Header {
+  background-color:rgb(177, 172, 208) ;
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Header h1 {
+  font-size: 150px;
+}
+
+.About {
+  width: 100%;
+  display: inline-block;
+}
+
+.AboutImg {
+  text-align: left;
+  width: 25%;
+}
+
+.HomePic {
+  width: 100%;
+}
+
+.AboutMe {
+
+}
