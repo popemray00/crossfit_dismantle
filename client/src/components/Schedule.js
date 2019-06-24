@@ -14,7 +14,7 @@ import './Schedule.css'
         <div className="Hours">
           <h1 className="Hours-Title">CrossFit Hours</h1>
           <h1>Monday - Friday  5 AM, 6 AM, 5:30 PM & 6:30 PM</h1>
-          <h1>Saturday 10am</h1>
+          <h1>Saturday 10 AM</h1>
         </div>
 
         <div className="Hours2">
