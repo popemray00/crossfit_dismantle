@@ -10,7 +10,7 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 #gem 'sqlite3', '~> 1.4.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 
 gem 'sass-rails', '~> 5.0'
 
