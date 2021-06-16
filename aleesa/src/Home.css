@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+  .styles {
+    font-family: sans-serif;
+  }
+
+  .parallax {
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .textbox {
+    background: transparent;
+    font-size: 150px;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;;
+    padding: 20;
+    position: absolute;
+    top: 35%;
+    left: 83%;
+    transform: translate(-50%,-50%);
+  }
+
+  #name {
+    color: white;
+  }
+
+  .quote {
+    background: black;
+    color: white;
+  }
+
+  .quote h1 {
+    font-size: 100px;
+    font-family: dancing script;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mainbody {
+    text-align: center;
+  }
+
+
